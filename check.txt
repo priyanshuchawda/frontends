@@ -1,0 +1,61 @@
+just check what all are left 
+
+. CORE FUNCTIONALITY (Don’t skip these)
+Board Layout
+Kanban columns for different statuses (e.g., To Do / In Progress / Done)
+Ability to add, delete, rename columns (custom statuses)
+Tasks
+CRUD (Create/Read/Update/Delete) for tasks
+Drag & drop tasks between columns/statuses (smooth DnD!)
+Each task: title, description, deadline, status
+Deadlines/Calendar
+Visual deadline indication (color highlight if overdue/near)
+Optional: calendar view, to see tasks by due date
+Details Modal/Drawer
+Click task to open details (edit fields, describe, see deadlines)
+Support for task comments/notes
+Persistence
+Fake/mock API or local storage (since backend isn’t required) so state isn't lost on reload
+
+2. UI/UX POLISH (High Judging Weight)
+Modern, clean, responsive design (mobile to desktop)
+Use animations/transitions for drag-and-drop, modals, etc.
+Color coding by status, priority, overdue, or assigned user
+Intuitive navigation! (Sidebar, top nav, etc. if needed)
+Polished empty states, loading skeletons
+3. ADVANCED FEATURES (For “wow!”)
+Task Assignment (Assign tasks to users, maybe display avatar/initials as mock data)
+Subtasks/checklists (e.g., Checklist inside a task)
+Labels/Tags (Tasks can have colored tags or categories)
+Task Priorities (High/Medium/Low, with icons/colors)
+Search/filter & sort (by title, due date, priority, label, assignee, etc.)
+Bulk actions (select multiple tasks to move/delete)
+Real-time collaboration (If you have time, mock real-time using localStorage events across tabs, or note that "multi-user" is simulated since backend isn’t allowed)
+Notifications/toasts (e.g. “Task moved!” popups)
+Light/Dark mode
+Accessibility (ARIA labels, keyboard navigation, color contrast)
+Keyboard shortcuts (e.g., “N” for new task, arrow keys to move selection)
+Export/Import (Download the board to JSON/CSV, re-import)
+4. VISUAL DESIGN & BRANDING
+Distinct visual identity; don’t mimic Trello/Asana too closely
+Custom logo/icon and app name
+Consistent spacing, font choices, color palette, and well-designed button states & feedback
+5. TECHNICAL QUALITY (Code will be reviewed for ties)
+Well-organized code, re-usable components
+Typescript (if using React etc) for type safety
+Custom hooks/utilities if logic is complex
+Proper state management (use React’s Context, Zustand, Redux, etc. — not overkill!)
+Component-level separation: Board > Column > Task > Modal etc.
+Clean, commented codebase with README, instructions
+Deployed on Vercel/Netlify, quick load time, no console errors
+6. EXTRA "WOW" FACTORS
+Animations (e.g., when a task moves, new columns appear)
+Customizable board (user can change its colors/bg, custom column icons, etc.)
+Product tour/onboarding
+Offline support/PWA (optional but impressive! "Offline mode enabled")
+Gorgeous minimal illustrations, icons
+Demo/mock login (choose a persona; assign tasks)
+Activity/Change log (see who moved which task when—even if just fake data)
+7. THINGS TO SKIP
+Back-end (The rules say to fake/mock!)
+Full auth, or real-time servers: focus on polished FE, stateful UX
